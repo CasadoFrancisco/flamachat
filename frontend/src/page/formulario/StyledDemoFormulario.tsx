@@ -12,12 +12,14 @@ height: 100vh;
 `;
 const ContainerOne = styled.div`
 display: flex;
+position: fixed;
 align-items: flex-start;
 justify-content: flex-start;
 flex-direction: column;
 width: 100%;
 padding: 15px 20px 15px 20px;
 flex: 1;
+background-color: ${paletColor.background};
 `;
 const Title = styled.h2`
 color: ${paletColor.titleColor};
@@ -33,6 +35,7 @@ border-radius: 20px;
 color:${paletColor.color};
 `;
 const Formulario = styled.form`
+padding-top: 70px;
 display: flex;
 align-items: flex-start;
 justify-content: flex-start;
@@ -43,6 +46,9 @@ flex: 25;
 padding-left: 20px;
 padding-right: 20px;
 gap: 5px;
+@media(max-height:600px){
+padding-bottom: 80px;
+}
 `;
 const Detail = styled.span`
 display: block;
@@ -86,12 +92,15 @@ height: 40%;
 `;
 const ContainerThree = styled.div`
 display: flex;
+position: fixed;
+bottom: 0;
 align-items: center;
 justify-content: space-between;
 flex: 2;
 width: 100%;
 padding: 10px 10px;
 gap: 20px;
+background-color: ${paletColor.background};
 `;
 const Button = styled.button`
 

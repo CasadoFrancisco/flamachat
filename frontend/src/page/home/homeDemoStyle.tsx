@@ -11,12 +11,14 @@ height: 100vh;
 `;
 const ContainerOne = styled.div`
 display: flex;
+position: fixed;
 align-items: flex-start;
 justify-content: flex-start;
 flex-direction: column;
 width: 100%;
 padding: 15px 20px 15px 20px;
 flex: 1;
+background-color: ${paletColor.background};
 `;
 const Title = styled.h2`
 color: ${paletColor.titleColor};
@@ -35,6 +37,7 @@ display: flex;
 align-items: flex-start;
 justify-content: flex-start;
 flex-direction: column;
+padding-top: 70px;
 width: 100%;
 background-color: ${paletColor.background};
 flex: 25;
@@ -70,11 +73,14 @@ font-weight: 500;
 `
 const ContainerThree = styled.div`
 display: flex;
+position: fixed;
+bottom: 0;
 align-items: center;
 justify-content: center;
 flex: 2;
 width: 100%;
 padding: 10px 10px;
+background-color: ${paletColor.background};
 `;
 const Button = styled.button`
   font-family: 'Raleway', sans-serif;
